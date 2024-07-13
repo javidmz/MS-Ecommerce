@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order-service
+  config:
+    import: optional:configserver:http://localhost:8888
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          keycloak:
+#            authorization-grant-type: client_credentials
+#            client-id: microservice-api
+#            client-secret: gBIobl0IfliW9MW23A6TlUA62moIz6if
+#        provider:
+#          keycloak:
+#            token-uri: http://localhost:9090/auth/realms/master/protocol/openid-connect/token
+
+#  cloud:
+#    openfeign:
+#      oauth2:
+#        enabled: true
+#        clientRegistrationId: keycloak
